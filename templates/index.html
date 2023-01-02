@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>BRAIN TUMOR DETECTION</title>
+</head>
+<style>
+body {
+  background-image: url('static/bgpic.jpg');
+}
+h1{
+font-family:Verdana;
+font-size:100px;
+}
+#file{
+text-align:center;
+font-size:30px;
+height:100px;
+width:500px;
+}
+#button{
+font-size:25px;
+}
+</style>
+<body>
+	<center>
+	<h1>BRAIN TUMOR DETECTION</h1>
+	<br>
+	<form action="/output" method="POST" enctype="multipart/form-data">
+		<input id="file" type="file" name="photo">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<button id = "button" type="submit">Predict</button>
+	</form>
+</body>
+</html>
